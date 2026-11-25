@@ -1,0 +1,90 @@
+{
+ "boards": {
+  "01 认知与心态": [
+   "mc-roundtable",
+   "mc-precedent",
+   "mc-slow-lane",
+   "mc-term-crack",
+   "mc-kickoff"
+  ],
+  "02 新手起步": [
+   "mc-newbie",
+   "mc-kickoff",
+   "mc-goal-card"
+  ],
+  "03 流量获取": [
+   "mc-traffic",
+   "mc-peer-pick",
+   "mc-playbook"
+  ],
+  "04 内容创作": [
+   "mc-content-scan",
+   "mc-opener",
+   "mc-script-glue",
+   "mc-echo-test",
+   "mc-human-touch",
+   "mc-rednote-title",
+   "mc-publish-guard",
+   "mc-clip",
+   "mc-recut",
+   "mc-replica",
+   "mc-idea-desk",
+   "mc-ai-workflow",
+   "mc-mp-layout",
+   "mc-loop",
+   "mc-card"
+  ],
+  "05 IP人设": [
+   "mc-ip",
+   "mc-peer-pick"
+  ],
+  "06 私域运营": [
+   "mc-private-ops",
+   "mc-newbie"
+  ],
+  "07 成交与转化": [
+   "mc-close"
+  ],
+  "08 选品与供应链": [
+   "mc-selection"
+  ],
+  "09 模式与操盘": [
+   "mc-mode",
+   "mc-ops",
+   "mc-biz-scan",
+   "mc-playbook",
+   "mc-goal-card"
+  ],
+  "10 AI与工具": [
+   "mc-ai-workflow",
+   "mc-vault",
+   "mc-workbench",
+   "mc-link",
+   "mc-sync",
+   "mc-skill-audit",
+   "mc-question-spec",
+   "mc-dispatch"
+  ],
+  "11 案例库": [
+   "mc-precedent",
+   "mc-playbook",
+   "mc-peer-pick",
+   "mc-biz-scan"
+  ],
+  "12 企业AI顾问": [
+   "mc-fde",
+   "mc-ontology"
+  ]
+ },
+ "meta_skills": [
+  "mc",
+  "mc-coach",
+  "mc-archive",
+  "mc-resume",
+  "mc-brief",
+  "mc-casefile",
+  "mc-course",
+  "mc-atomize"
+ ],
+ "note": "板块→消费技能对照；打标后每板块条数与此表一起做路由审计"
+}

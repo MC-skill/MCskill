@@ -1,0 +1,197 @@
+# Fengwu Zhishou · MC Business Operating System
+
+[中文](README.md) | **English**
+
+![Fengwu Zhishou](docs/assets/banner.png)
+
+> *Seen every playbook, kept to first principles.*
+
+**A business & private-domain consultant that lives inside your AI.** Built by a Chinese private-domain operator with over a decade of hands-on experience — scaling a TCM wellness brand to ¥125M in 10 months, an aromatherapy brand to ¥240M in 2 years — this system packages that judgment into **46 Skills** across four lines: **private domain & traffic** (positioning, product selection, content, lead-gen, closing), **business & team** (models, compliance, headcount efficiency), **IP & content creation**, and **Ontology & FDE (Forward Deployed Engineer) methodology**.
+
+The Ontology/FDE line isn't a slide deck: the six-step modeling method actually ran on our own **~28,000 knowledge atoms** and one real client system, producing **333 concept nodes** — and an independent AI fact-checked the results line by line before publishing. The process and conclusions are fully public, see [`mc-ontology`](skills/mc-ontology/SKILL.md).
+
+![Version](https://img.shields.io/badge/version-2.10.0-2e6b4f.svg?style=flat-square)
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-c6ff00.svg?style=flat-square)
+
+Every judgment traces back to a specific atom ID; when it genuinely can't find one, it says so instead of making one up.
+
+One premise up front: **your private domain can generate its own traffic.** Don't buy into the "grow traffic first, build private domain later" split — your WeChat moments are already an ad slot, your repeat customers already refer new ones, content and lead-gen are capabilities private domain owns on its own.
+
+[Get started](#get-started) · [What it solves](#what-it-solves) · [How Ontology & FDE actually got built](#how-ontology--fde-actually-got-built) · [What's inside](#whats-inside) · [Install](#install)
+
+## Get started
+
+Say this in your Agent once it's installed:
+
+```text
+/mc A customer added me on WeChat, chatted a bit, said "too expensive," and went quiet.
+Not sure if I should drop the price, change my pitch, or if they were never my target customer.
+```
+
+Already know what you want? Name the skill directly (every skill introduces itself in its first line):
+
+```text
+/mc-close A customer thinks it's too expensive and stopped replying — is this deal still savable?
+/mc-mode I'm designing a three-tier commission structure — check if it crosses any lines.
+/mc-selection A supplier friend wants me to sell his enzyme product — is this a good pick?
+/mc-vault Turn this folder into my business knowledge base so I can query it directly.
+```
+
+Not sure where to start? Say `/mc-coach` — chat with **Xiaoye** (the author's AI persona) for a few minutes like you're talking to a friend, and your business profile gets built (saved locally to `~/.mc/`). Every judgment after that is grounded in your actual numbers.
+
+## What it solves
+
+You don't need to learn a framework or know which tool to call. Hand `/mc` whatever you're stuck on, and it reads where your business actually is; every round closes with three lines: **the one next action, the number to watch, the evidence behind it.**
+
+| Where you're stuck | What you get |
+| --- | --- |
+| Can't tell if the business is even worth continuing | Seven-point health check, from net profit to growth stage, every call cited |
+| Not sure if a product is worth carrying | Two-axis classification, full-cost accounting, three-round paid-test method |
+| Customer thinks it's too expensive and goes quiet | Full diagnostic across the whole closing chain, from first chat to repeat purchase |
+| Paid ads keep losing money — stop or push through? | Whether to run paid traffic at all, folded into a basic-viability check |
+| New account has no traffic, afraid to get banned for lead-gen | Account-warmup and lead-gen path design, tactics ranked by risk |
+| Don't know what to post, old customers have gone quiet | Content mix, tagging, concrete reactivation moves |
+| Not sure the commission structure is legal | Five-dimension structural review, compliance research paths (no legal verdicts) |
+| Can't keep the team, don't know how to set commissions | Efficiency red lines, payout structure, launch-pace review |
+| Want a few different perspectives on one decision | Roundtable: 3–5 frameworks argue it out and a verdict gets called |
+| Want to pick up last session's conclusion | Local archive: save, resume, case-file backfill — all on your own machine |
+| Company's internal rules are a mess, and AI hasn't fixed it | Ontology/FDE: get clear on what it is and whether it's worth building; real rollout follows a gated delivery process |
+
+## How routing and memory connect
+
+![MC single-step routing](docs/assets/routing-flow.png)
+
+One skill at a time. Each round's conclusion becomes the input for the next round's routing — nothing pre-chains into a default sequence:
+
+![How the system connects](docs/assets/system-flow-readme.png)
+
+## How Ontology & FDE actually got built
+
+Ontology is a discipline for defining the entities, types, hierarchy, and relationships inside a business — it traces back to the philosophical study of "being," later borrowed by computer science to solve the problem of "data piling up while AI still can't read the business structure." The role that does this work inside a company is called an FDE (Forward Deployed Engineer, "forward-deployed engineer") — someone who moves into a client's systems with tooling and builds out *that client's own* business structure, rather than selling a generic template.
+
+MC didn't stop at "explaining the concept": the six-step modeling method (define boundaries → extract entities → define types → build hierarchy → extract relations → verify) actually ran twice — once on our own ~28,000 knowledge atoms, producing 333 concept nodes; once as a verification pass on one real client system. We didn't publish immediately after finishing — instead, an independent AI fact-checked the conclusions line by line against real data, fixed the errors it found, and only then republished. That's what step six, "verify," is actually for — not a formality.
+
+![Ontology & FDE methodology](docs/assets/ontology-fde-flow.png)
+
+This line splits into two layers with a hard boundary:
+
+- **`mc-ontology` (free)**: answers "what is Ontology/FDE, how does it differ from a knowledge graph or RAG warehouse, is it worth building for your company" — its job is building judgment, not doing the work.
+- **`mc-fde` (enterprise consulting entry point)**: off-the-shelf vs. custom, pricing, internal org resistance — its job is judging whether and how to take on an engagement; actually walking a client's own data through the full modeling process is a separate on-site service.
+- **Scope boundary**: this line is for internal knowledge, operations, and compliance scenarios — it is not a "get more customers" growth tool. Ontology work has a long payback cycle and a poor cost/benefit ratio for top-of-funnel acquisition; don't misapply it.
+
+## What's inside
+
+46 skills across 14 areas — plain language routes you in automatically, or call a skill by name:
+
+| Area | Call directly | What you typically get |
+| --- | --- | --- |
+| Ontology & FDE onboarding | `/mc-ontology` | What Ontology/FDE is, how it differs from a knowledge graph/RAG warehouse, whether it's worth building |
+| Enterprise AI consulting | `/mc-fde` | Off-the-shelf vs. custom calls, pricing models, org-adoption resistance |
+| Business diagnosis & model | `/mc-biz-scan` `/mc-mode` `/mc-ops` | Seven-point health check, commission review, efficiency & launch-readiness calls |
+| Product selection & supply chain | `/mc-selection` | Two-axis classification, cost accounting, paid-test plan |
+| IP & positioning | `/mc-ip` `/mc-goal-card` | Seven positioning criteria, an executable goal card |
+| Content creation | `/mc-content-scan` `/mc-opener` `/mc-script-glue` `/mc-human-touch` `/mc-replica` | Five-dimension diagnosis, opening-line candidates, flow check, de-AI-flavor pass, viral-content replication |
+| Titles & distribution | `/mc-rednote-title` `/mc-echo-test` | Top-3 titles, resonance-mechanism breakdown |
+| Traffic & lead-gen | `/mc-traffic` `/mc-peer-pick` | Account-warmup & lead-gen path, benchmark screening |
+| Long-form editing | `/mc-clip` `/mc-recut` | Turn a transcript into short-video segments, or trim/reorder a long video |
+| Private-domain ops & closing | `/mc-private-ops` `/mc-close` | Full diagnosis from WeChat moments to repeat purchase |
+| Playbooks & precedent | `/mc-playbook` `/mc-precedent` | 8 industry playbook templates, historically-analogous cases |
+| Publishing risk | `/mc-publish-guard` `/mc-skill-audit` | Pre-publish risk sweep, local skill security check |
+| Frameworks & learning | `/mc-roundtable` `/mc-course` `/mc-term-crack` | Roundtable debate, interactive courses, concept breakdowns |
+| Memory & workbench | `/mc-archive` `/mc-resume` `/mc-casefile` `/mc-vault` `/mc-workbench` | Local archives, decision case files, knowledge base, cross-host bridging |
+
+Full skill list with Chinese names, trigger conditions, and sample inputs: [MC 指令清单](docs/MC指令清单.md) (Chinese only).
+
+## Install
+
+**Easiest:**
+
+```bash
+npx -y skills add xyaz1313/xyskill -g --all
+```
+
+Then say `/mc 新手入门` in your Agent to get going.
+
+**Or clone and run the install script:**
+
+```bash
+git clone https://github.com/xyaz1313/xyskill.git && cd xyskill
+bash install.sh
+```
+
+| Your tool | Skills directory |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex | `~/.agents/skills/` |
+| Kimi Code | `~/.kimi-code/skills/` |
+| Cursor / WorkBuddy / others | `~/.cursor/skills/` · `~/.workbuddy/skills/` · `~/.agents/skills/` |
+
+**Or through the Claude Code plugin marketplace:**
+
+```bash
+claude plugin marketplace add https://github.com/xyaz1313/xyskill.git
+claude plugin install mc@mc-skills
+```
+
+Use the full `https://` URL, not the `owner/repo` shorthand — the shorthand falls back to SSH and fails on machines without an SSH key configured for GitHub.
+
+![Claude Code plugin install demo](demo.gif)
+
+**Update:** already installed? Say `/mc-sync` to your Agent, or run `bash skills/mc-sync/scripts/mc-sync.sh sync`. Updates never touch your personal profile, archives, or decision records in `~/.mc/`.
+
+Chinese is the system's native tongue, but it follows the language you use — ask in English, get English back.
+
+## Where the atoms come from
+
+`knowledge/atoms.jsonl` holds 28,226 knowledge atoms, tagged across 15 topics and 94 sub-blocks; every atom stands on its own and links back to others.
+
+**Two numbers, stated up front:**
+
+- **Counted by volume, 86% comes from external methodology** — consulting frameworks, business-management and negotiation books, other people's courses — all rewritten into business-scenario language before entering the library; not a single passage of original text is stored, and every atom's `source_type` says so. A reader once had an AI compute this ratio. They got it right.
+- **Counted by what you actually get, 94% is the author's own practice and courses** — run 20 typical questions and 94% of the top-5 results come from real accounts, livestream retrospectives, the course system and a decade-plus of founding businesses (anything with real numbers is marked `high` confidence). Retrieval ranking always puts first-hand practice first; external methodology is the background layer, not the answer.
+
+Both numbers are reproducible: `python3 scripts/source-composition.py` prints the stock composition, the concept-node evidence composition, and the retrieval-result composition — same result for anyone who runs it.
+
+Other sources: current rules of the four major platforms (Douyin, Xiaohongshu, WeChat, Channels — `platform_rule`); benchmark account content (anonymized); methodology from third-party paid bootcamps (speaker and student names anonymized, specific case passages excluded, only reusable judgments and methods kept). Full definitions of source types live in `knowledge/ontology-schema.md`, section "来源类型".
+
+## Repository layout
+
+| Path | What lives there |
+| --- | --- |
+| `skills/` | Source of truth for all 46 Skills |
+| `agents/mc-coach.md` | The coach agent |
+| `_shared/` | 9 core beliefs, voice red lines, routing contract, board map |
+| `knowledge/` | The atom library (`_internal/` is raw material, never distributed) |
+| `scripts/` | atoms-search.py retrieval, mc-init, mc-brain |
+| `docs/` | Getting started, command list, host compatibility matrix |
+| `hooks/` | Session-start hooks |
+
+## Making changes
+
+- To change a Skill: edit only `skills/<name>/SKILL.md`; `references/atoms.jsonl` is that Skill's local fallback subset for when it is copied out of the repo on its own — update it alongside.
+- To add atoms: append to `knowledge/atoms.jsonl` (fields as existing: id/type/knowledge/original/confidence/topics/skills/source_type/source_label), and sync them into the relevant Skill's `references/atoms.jsonl`.
+- To cut a release: bump `version` and `notice` in `UPDATE.json`, then tag it in git.
+
+## Disclaimer
+
+What this system gives you is business judgment and self-check paths grounded in its knowledge base — **not legal, tax, medical, or investment advice**. For anything touching business-model compliance, tax arrangements, advertising claims, or employment contracts, defer to a licensed lawyer or tax professional; for product efficacy claims, defer to tests and approvals recognized by the relevant regulator. Decisions you make with this system are your own responsibility.
+
+## License
+
+This repo is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (see `LICENSE`):
+
+- Free for personal use, learning, research, and non-commercial projects.
+- If you publish a derivative work, please credit the source.
+- Commercial use requires separate licensing — contact the author below.
+
+## Author & support
+
+Author: **Xiaoye** · Business creator · Private-domain operator · Ontology/FDE methodology practitioner · [Douyin](https://v.douyin.com/njWgCcCFUYY/)
+
+<img src="docs/assets/wechat-qrcode.jpg" alt="WeChat" width="240">
+
+Scan to connect on WeChat — for questions, commercial licensing or enterprise consulting.
+
+---
+
+<sub>This project's early routing and skill-skeleton design drew on some ideas from the open-source project [dbskill](https://github.com/dontbesilent2025/dbskill) (by dontbesilent, CC BY-NC 4.0), noted here for the record — no text, tweets, or knowledge data from it were used; all content and knowledge atoms are original to this project. Respect to Don't Be Silent 🙏</sub>
